@@ -26,7 +26,7 @@ mongoose.connection.on("disconnected", () => {
 // middlewares
 
 app.use(express.json());
-const allowedOrigins = ["http://localhost:3000", "http://localhost:3001"];
+const allowedOrigins = ["https://mybookingclient.onrender.com"];
 app.use(cors({ origin: allowedOrigins, credentials: true }));
 app.use(cookieParser());
 
